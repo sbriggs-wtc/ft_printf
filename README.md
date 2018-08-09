@@ -1,1 +1,1 @@
-# unix_100_ft_printf
+A project to recreate the <stdio.h> printf in C
