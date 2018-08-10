@@ -6,7 +6,7 @@
 #    By: sbriggs <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/14 13:32:13 by sbriggs           #+#    #+#              #
-#    Updated: 2018/08/09 12:53:50 by sbriggs          ###   ########.fr        #
+#    Updated: 2018/08/10 15:15:06 by sbriggs          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,11 @@ FILES = ft_printf.c \
 		pr_format.c \
 		pr_itoa_base.c \
 		pr_putchar.c \
-		pr_putlong.c \
-		pr_putnbr.c \
 		pr_putstr.c \
 		pr_putstr_case.c \
 		pr_strchr.c \
 		pr_tolower.c \
+		pr_toupper.c \
 
 OBJS = $(FILES:.c=.o)
 

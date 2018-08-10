@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbriggs <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/10 17:04:40 by sbriggs           #+#    #+#             */
-/*   Updated: 2018/08/10 15:15:27 by sbriggs          ###   ########.fr       */
+/*   Created: 2018/05/27 10:36:29 by sbriggs           #+#    #+#             */
+/*   Updated: 2018/08/10 14:11:59 by sbriggs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include <stdarg.h>
-# include <stdlib.h>
-
-int		ft_printf(char *format, ...);
-void	pr_bzero(void *s, int n);
-int		pr_format(char *s, va_list ap);
-char	*pr_itoa_base(long n, int base);
-int		pr_putchar(char c);
-int		pr_putstr(char *s);
-int		pr_putstr_case(char *s, int c);
-char	*pr_strchr(char *s, int c);
-int		pr_tolower(int c);
-int		pr_toupper(int c);
-
-#endif
+int		pr_toupper(int c)
+{
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	else
+		return (c);
+}
