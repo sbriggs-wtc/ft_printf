@@ -6,7 +6,7 @@
 /*   By: sbriggs <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/22 13:52:20 by sbriggs           #+#    #+#             */
-/*   Updated: 2018/08/10 15:21:53 by sbriggs          ###   ########.fr       */
+/*   Updated: 2018/08/13 11:45:27 by sbriggs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_printf(char *format, ...)
 		}
 		else
 		{
-			ret += pr_putchar(*(format + i));
+			ret +=pr_putchar(*(format + i));
 		}
 		i++;
 	}
