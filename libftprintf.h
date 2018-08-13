@@ -6,7 +6,7 @@
 /*   By: sbriggs <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 17:04:40 by sbriggs           #+#    #+#             */
-/*   Updated: 2018/08/10 15:15:27 by sbriggs          ###   ########.fr       */
+/*   Updated: 2018/08/13 11:37:41 by sbriggs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int		ft_printf(char *format, ...);
 void	pr_bzero(void *s, int n);
 int		pr_format(char *s, va_list ap);
 char	*pr_itoa_base(long n, int base);
+int		pr_putaddr(va_list ap);
 int		pr_putchar(char c);
 int		pr_putstr(char *s);
 int		pr_putstr_case(char *s, int c);

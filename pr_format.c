@@ -6,7 +6,7 @@
 /*   By: sbriggs <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/04 12:45:02 by sbriggs           #+#    #+#             */
-/*   Updated: 2018/08/10 15:21:57 by sbriggs          ###   ########.fr       */
+/*   Updated: 2018/08/13 10:40:37 by sbriggs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,18 +93,6 @@ int		pr_longints(va_list ap, char c)
 		ret = pr_putstr(pr_itoa_base(MAX_LONG + n, 10));
 	else if (c == 'D' && n >= 0)
 		ret = pr_putstr(pr_itoa_base(n, 10));
-	return (ret);
-}
-
-int		pr_putaddr(va_list ap)
-{
-	long	p;
-	int		ret;
-
-	ret = 0;
-	p = (long)(va_arg(ap, void *));
-	ret = pr_putstr("0x");
-	ret += pr_putstr_case(pr_itoa_base(p, 16), LOWERCASE);
 	return (ret);
 }
 
