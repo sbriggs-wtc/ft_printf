@@ -1,1 +1,1 @@
-My implementation of the printf() funcion in C. 
+My implementation of the printf() function in C. 
